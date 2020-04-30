@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--Import Google Icon Font-->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <!--Import materialize.css-->
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="/stylesheets/materialize.min.css"
+      media="screen,projection"
+    />
+    <link type="text/css" rel="stylesheet" href="/main.css" />
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Custom Materialize Theme</title>
+  </head>
+  <body id="home" scrollspy>
+    <%- include('../partials/header.ejs')%> <%- body %>
+    <%-include('../partials/footer.ejs')%>
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-3.2.1.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="/javascripts/materialize.min.js"
+    ></script>
+    <script>
+      $(document).ready(function () {
+        // Custom JS & jQuery here
+        $('.button-collapse').sideNav();
+        $('.slider').slider({
+          indicators: false,
+          height: 500,
+          transition: 500,
+          interval: 6000,
+        });
+        $('.scrollspy').scrollSpy();
+      });
+    </script>
+  </body>
+</html>

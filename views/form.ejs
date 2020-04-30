@@ -1,0 +1,36 @@
+<div class="row">
+  <form action="/" method="POST" id="complaint-form">
+    <div class="col s12 m6 offset-m3">
+      <div class="card-panel grey lighten-3">
+        <h5>Please fill out this form</h5>
+        <div class="input-field">
+          <input type="text" placeholder="Name" id="name" name="name" />
+          <label for="name">Name</label>
+        </div>
+        <div class="input-field">
+          <input type="email" placeholder="Email" id="email" name="email" />
+          <label for="email">Email</label>
+        </div>
+        <div class="input-field">
+          <input type="text" placeholder="Phone" id="phone" name="phone" />
+          <label for="phone">Phone</label>
+        </div>
+        <div class="input-field">
+          <textarea
+            class="materialize-textarea"
+            placeholder="Enter Message"
+            id="message"
+            name="message"
+          ></textarea>
+          <label for="message">Complaint...</label>
+        </div>
+        <p>Choose a Photo you want to upload</p>
+        <div class="input-field">
+          <input type="file" id="myfile" name="myfile" />
+        </div>
+        <br />
+        <button type="submit" class="btn">Submit</button>
+      </div>
+    </div>
+  </form>
+</div>
